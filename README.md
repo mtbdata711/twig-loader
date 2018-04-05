@@ -34,6 +34,9 @@ module.exports = {
 
 ### Options
 
+- `extender`: optional; the full path to a module which exports a `function(Twig)`
+  which extends Twig (such as adding filters and functions).
+  Example: `__dirname + "/src/extendTwig.js"`
 - `twigOptions`: optional; a map of options to be passed through to Twig.
   Example: `{autoescape: true}`
 
