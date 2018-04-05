@@ -3,7 +3,7 @@ Webpack loader for compiling Twig.js templates. This loader will allow you to re
 
 ## Installation
 
-`npm install twig-loader`
+`npm install @tremby/twig-loader`
 
 ## Usage
 
