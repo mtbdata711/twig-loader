@@ -29,7 +29,7 @@ module.exports = {
 ### Options
 
 - `extender`: optional; the full path to a module which exports a `function(Twig)`
-  which extends Twig (such as adding filters and functions).
+  which extends Twig (such as adding filters and functions). Must use `export default` instead of `module.exports`.
   Example: `__dirname + "/src/extendTwig.js"`
 
 ## Loading templates
