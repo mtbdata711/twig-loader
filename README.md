@@ -37,6 +37,7 @@ module.exports = {
 - `extender`: optional; the full path to a module which exports a `function(Twig)`
   which extends Twig (such as adding filters and functions). Must use `export default` instead of `module.exports`.
   Example: `__dirname + "/src/extendTwig.js"`
+- `paths`: optional; an array of absolute paths that contain Twig templates. When this option is included, paths that doesn’t begin with a `.` or `/` inside tags like `{% include %}` and `{% extends %}` will be considered relative to one of these paths instead of the file. This mimics the PHP implementation of Twig.
 - `twigOptions`: optional; a map of options to be passed through to Twig.
   Example: `{autoescape: true}`
 
@@ -49,7 +50,7 @@ module.exports = {
 
 ```javascript
 // File: app.js
-var template = require("dialog.html.twig");
+var template = require("./dialog.html.twig");
 // => returns pre-compiled template as a function and automatically includes Twig.js to your project
 
 var html = template({title: 'dialog title'});
