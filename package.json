@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "mocha": "*",
+    "prettier": "^1.19.1",
     "should": "*"
   }
 }
