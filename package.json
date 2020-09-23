@@ -1,6 +1,6 @@
 {
   "name": "@jfrk/twig-loader",
-  "version": "1.1.0-beta.0",
+  "version": "1.1.0",
   "description": "Webpack loader for compiling twig.js templates",
   "main": "index.js",
   "scripts": {
