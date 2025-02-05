@@ -1,9 +1,11 @@
-# twig-loader [![Build Status](https://travis-ci.org/zimmo-be/twig-loader.svg)](https://travis-ci.org/zimmo-be/twig-loader)
+# twig-loader
 Webpack loader for compiling Twig.js templates. This loader will allow you to require Twig.js views to your code.
+
+This is a fork of [@jfrk/twig-loader](https://github.com/jfrk/twig-loader) to support using Drupal's [Single Directory Components](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components) in [Twig.js](https://github.com/twigjs/twig.js). 
 
 ## Installation
 
-`npm install @jfrk/twig-loader`
+- Clone this repo
 
 ## Usage
 
@@ -40,6 +42,7 @@ module.exports = {
 - `paths`: optional; an array of absolute paths that contain Twig templates. When this option is included, paths that doesn’t begin with a `.` or `/` inside tags like `{% include %}` and `{% extends %}` will be considered relative to one of these paths instead of the file. This mimics the PHP implementation of Twig.
 - `twigOptions`: optional; a map of options to be passed through to Twig.
   Example: `{autoescape: true}`
+ - `sdc` - optional; object of namespaces and paths to SDC namespaces. Example: `{design_system: path.resolve(__dirname, './components')}`
 
 ## Loading templates
 
