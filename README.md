@@ -1,3 +1,4 @@
+
 # twig-loader
 Webpack loader for compiling Twig.js templates. This loader will allow you to require Twig.js views to your code.
 
@@ -5,7 +6,7 @@ This is a fork of [@jfrk/twig-loader](https://github.com/jfrk/twig-loader) to su
 
 ## Installation
 
-- Clone this repo
+`npm i @mtbdata711/twig-loader`
 
 ## Usage
 
